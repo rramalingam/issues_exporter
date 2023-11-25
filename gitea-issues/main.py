@@ -5,12 +5,13 @@ configuration = giteapy.Configuration()
 
 # ======================================================================================================================
 # Modify configuration for your needs
-configuration.host = 'https://hi.mongrov.com/api/v1'
-configuration.api_key['access_token'] = '18907e188e4647f4bc27c183d4c4f3163700db48'  # https://<YOUR GITEA URL ORIGIN>/user/settings/applications
-my_organization_name = 'csafe'
-my_repo_name1 = 'webapp'
-my_repo_name2 = 'mobileapp'
-my_repo_name3 = 'collab'
+configuration.host = 'https://<your org gitea instance>/api/v1'
+configuration.api_key['access_token'] = '<above instance access token here>'  # https://<YOUR GITEA URL ORIGIN>/user/settings/applications
+my_organization_name = '<project name>'
+#you can list your repos that you need to export
+my_repo_name1 = '<repo_name1>'
+my_repo_name2 = '<repo_name2>'
+my_repo_name3 = '<repo_name3>'
 # ======================================================================================================================
 
 api_client = giteapy.ApiClient(configuration)
